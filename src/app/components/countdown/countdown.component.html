@@ -1,1 +1,21 @@
-<p>countdown works!</p>
+<div class="flex flex-col items-center space-y-6">
+  <!-- Contador -->
+  <div class="flex flex-wrap justify-center gap-4">
+    <div class="bg-gray-800 text-white text-center px-6 py-4 rounded-2xl shadow-lg w-28 sm:w-32">
+      <div class="text-3xl sm:text-4xl font-bold">{{ days }}</div>
+      <div class="text-xs sm:text-sm uppercase tracking-wide">Días</div>
+    </div>
+    <div class="bg-gray-800 text-white text-center px-6 py-4 rounded-2xl shadow-lg w-28 sm:w-32">
+      <div class="text-3xl sm:text-4xl font-bold">{{ hours }}</div>
+      <div class="text-xs sm:text-sm uppercase tracking-wide">Horas</div>
+    </div>
+    <div class="bg-gray-800 text-white text-center px-6 py-4 rounded-2xl shadow-lg w-28 sm:w-32">
+      <div class="text-3xl sm:text-4xl font-bold">{{ minutes }}</div>
+      <div class="text-xs sm:text-sm uppercase tracking-wide">Minutos</div>
+    </div>
+    <div class="bg-gray-800 text-white text-center px-6 py-4 rounded-2xl shadow-lg w-28 sm:w-32">
+      <div class="text-3xl sm:text-4xl font-bold">{{ secs }}</div>
+      <div class="text-xs sm:text-sm uppercase tracking-wide">Segundos</div>
+    </div>
+  </div>
+</div>
