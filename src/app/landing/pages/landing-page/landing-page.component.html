@@ -1,24 +1,26 @@
-<div class="flex flex-col min-h-screen">
-  <app-navbar />
+<app-navbar class="fixed top-0 left-0 w-full z-50" />
 
+<div
+  class="hero min-h-screen pt-20 pb-20 flex flex-col justify-center items-center px-4 sm:px-8 lg:px-16 animate__animated animate__fadeInDown"
+>
   <div
-    class="flex-grow flex flex-col items-center justify-center animate__animated animate__fadeInDown"
+    class="hero-content flex flex-col lg:flex-row-reverse items-center lg:items-start max-w-7xl w-full"
   >
-    <h1
-      class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-10 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 bg-clip-text text-transparent"
-    >
-      BATTLE OF LEGENDS
-    </h1>
-
-    <app-countdown />
+    <img
+      src="logoLegends.png"
+      class="max-w-xs sm:max-w-sm lg:max-w-md rounded-lg mb-8 lg:mb-0"
+    />
+    <div class="text-center lg:text-left lg:ml-12">
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 sm:mb-10 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 bg-clip-text text-transparent"
+      >
+        BATTLE OF LEGENDS
+      </h1>
+      <app-countdown />
+      <p class="py-6 max-w-lg mx-auto lg:mx-0">
+        Texto informativo sobre el evento, que se celebrará en la FESWC
+      </p>
+    </div>
   </div>
-
-  <div
-    class="flex justify-center items-center gap-6 my-10 animate__animated animate__fadeInDown"
-  >
-    <img src="logo_fede.png" alt="LogoFESWC" class="h-20" />
-    <img src="logoLegends.png" alt="LogoLegends" class="h-20" />
-  </div>
-
-  <app-footer />
 </div>
+<app-footer class="fixed bottom-0 left-0 w-full z-50" />
