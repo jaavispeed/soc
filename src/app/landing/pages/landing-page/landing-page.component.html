@@ -1,28 +1,23 @@
-<app-navbar class="fixed top-0 left-0 w-full z-50" />
-<div
-  class="hero min-h-[80vh] pt-12 pb-12 flex flex-col justify-center items-center px-4 sm:px-8 lg:px-16 animate__animated animate__fadeInDown"
->
+<div class="h-screen flex flex-col overflow-hidden">
+  <app-navbar />
+
   <div
-    class="hero-content flex flex-col lg:flex-row-reverse items-center lg:items-start max-w-7xl w-full"
+    class="flex-1 flex items-center justify-center animate__animated animate__fadeInDown"
   >
-    <img
-      src="logoLegends.png"
-      class="max-w-xs sm:max-w-sm lg:max-w-md rounded-lg mb-8 lg:mb-0"
-    />
-    <div class="text-center lg:text-left lg:ml-12">
-      <h1
-        class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-1 sm:mb-1 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 bg-clip-text text-transparent"
-      >
-        BATTLE OF LEGENDS
-      </h1>
-      <p class="text-sm font-bold mb-6">Primera edición</p>
-      <app-countdown />
-      <p
-        class="mt-2 max-w-lg mx-auto lg:mx-0 text-gray-700 text-sm font-semibold tracking-wide"
-      >
-        Renace la gloria, Arde la leyenda.
-      </p>
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img src="logo_battleoflegends.png" class="max-w-sm rounded-lg" />
+      <div>
+        <app-countdown />
+        <p
+          class="text-sm font-semibold mt-2 bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 bg-clip-text text-transparent"
+        >
+          Renace la gloria, Arde la leyenda.
+        </p>
+      </div>
     </div>
   </div>
+
+  <app-auspiciadores></app-auspiciadores>
+
+  <app-footer />
 </div>
-<app-footer class="fixed bottom-0 left-0 w-full z-50" />
