@@ -3,12 +3,12 @@ import LandingPageComponent from './landing/pages/landing-page/landing-page.comp
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'Soc',
     component: LandingPageComponent,
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'Soc',
     pathMatch: 'full',
   }
 ];
