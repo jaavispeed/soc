@@ -1,0 +1,55 @@
+<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+  <div
+    class="bg-neutral rounded-box text-neutral-content flex flex-col items-center justify-center p-2"
+  >
+    <span class="font-mono text-5xl">
+      {{ formatNumber(days) }}
+    </span>
+    Días
+  </div>
+
+  <div
+    class="bg-neutral rounded-box text-neutral-content flex flex-col items-center justify-center p-2"
+  >
+    <span class="countdown font-mono text-5xl">
+      <span
+        [style.--value]="hours"
+        [attr.aria-label]="hours"
+        aria-live="polite"
+      >
+        {{ formatNumber(hours) }}
+      </span>
+    </span>
+    Horas
+  </div>
+
+  <div
+    class="bg-neutral rounded-box text-neutral-content flex flex-col items-center justify-center p-2"
+  >
+    <span class="countdown font-mono text-5xl">
+      <span
+        [style.--value]="minutes"
+        [attr.aria-label]="minutes"
+        aria-live="polite"
+      >
+        {{ formatNumber(minutes) }}
+      </span>
+    </span>
+    Minutos
+  </div>
+
+  <div
+    class="bg-neutral rounded-box text-neutral-content flex flex-col items-center justify-center p-2"
+  >
+    <span class="countdown font-mono text-5xl">
+      <span
+        [style.--value]="seconds"
+        [attr.aria-label]="seconds"
+        aria-live="polite"
+      >
+        {{ formatNumber(seconds) }}
+      </span>
+    </span>
+    Segundos
+  </div>
+</div>
